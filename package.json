@@ -1,0 +1,31 @@
+
+{
+  "name": "helmet-heroes-desktop",
+  "version": "1.0.0",
+  "description": "Helmet Heroes desktop web wrapper",
+  "main": "main.js",
+  "author": "AstraxX",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win zip portable"
+  },
+  "devDependencies": {
+    "electron": "^37.0.0",
+    "electron-builder": "^26.0.0"
+  },
+  "build": {
+    "appId": "com.astraxx.helmetheroes",
+    "productName": "Helmet Heroes",
+    "files": [
+      "main.js",
+      "index.html",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        "zip",
+        "portable"
+      ]
+    }
+  }
+}
